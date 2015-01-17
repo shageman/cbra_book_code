@@ -1,0 +1,34 @@
+plain_plugin
+├── lib
+│   ├── plain_plugin
+│   └── tasks
+└── test
+    └── dummy
+        ├── app
+        │   ├── assets
+        │   │   ├── images
+        │   │   ├── javascripts
+        │   │   └── stylesheets
+        │   ├── controllers
+        │   │   └── concerns
+        │   ├── helpers
+        │   ├── mailers
+        │   ├── models
+        │   │   └── concerns
+        │   └── views
+        │       └── layouts
+        ├── bin
+        ├── config
+        │   ├── environments
+        │   ├── initializers
+        │   └── locales
+        ├── db
+        ├── lib
+        │   └── assets
+        ├── log
+        ├── public
+        └── tmp
+            └── cache
+                └── assets
+
+31 directories

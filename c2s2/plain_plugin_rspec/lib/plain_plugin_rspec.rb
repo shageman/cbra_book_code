@@ -1,0 +1,2 @@
+module PlainPluginRspec
+end

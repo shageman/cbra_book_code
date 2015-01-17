@@ -1,0 +1,54 @@
+mountable_engine
+├── app
+│   ├── assets
+│   │   ├── images
+│   │   │   └── mountable_engine
+│   │   ├── javascripts
+│   │   │   └── mountable_engine
+│   │   └── stylesheets
+│   │       └── mountable_engine
+│   ├── controllers
+│   │   └── mountable_engine
+│   ├── helpers
+│   │   └── mountable_engine
+│   ├── mailers
+│   ├── models
+│   └── views
+│       └── layouts
+│           └── mountable_engine
+├── bin
+├── config
+├── lib
+│   ├── mountable_engine
+│   └── tasks
+└── test
+    ├── dummy
+    │   ├── app
+    │   │   ├── assets
+    │   │   │   ├── images
+    │   │   │   ├── javascripts
+    │   │   │   └── stylesheets
+    │   │   ├── controllers
+    │   │   │   └── concerns
+    │   │   ├── helpers
+    │   │   ├── mailers
+    │   │   ├── models
+    │   │   │   └── concerns
+    │   │   └── views
+    │   │       └── layouts
+    │   ├── bin
+    │   ├── config
+    │   │   ├── environments
+    │   │   ├── initializers
+    │   │   └── locales
+    │   ├── db
+    │   ├── lib
+    │   │   └── assets
+    │   ├── log
+    │   ├── public
+    │   └── tmp
+    │       └── cache
+    │           └── assets
+    └── integration
+
+51 directories

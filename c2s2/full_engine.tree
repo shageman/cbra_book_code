@@ -1,0 +1,50 @@
+full_engine
+├── app
+│   ├── assets
+│   │   ├── images
+│   │   │   └── full_engine
+│   │   ├── javascripts
+│   │   │   └── full_engine
+│   │   └── stylesheets
+│   │       └── full_engine
+│   ├── controllers
+│   ├── helpers
+│   ├── mailers
+│   ├── models
+│   └── views
+├── bin
+├── config
+├── lib
+│   ├── full_engine
+│   └── tasks
+└── test
+    ├── dummy
+    │   ├── app
+    │   │   ├── assets
+    │   │   │   ├── images
+    │   │   │   ├── javascripts
+    │   │   │   └── stylesheets
+    │   │   ├── controllers
+    │   │   │   └── concerns
+    │   │   ├── helpers
+    │   │   ├── mailers
+    │   │   ├── models
+    │   │   │   └── concerns
+    │   │   └── views
+    │   │       └── layouts
+    │   ├── bin
+    │   ├── config
+    │   │   ├── environments
+    │   │   ├── initializers
+    │   │   └── locales
+    │   ├── db
+    │   ├── lib
+    │   │   └── assets
+    │   ├── log
+    │   ├── public
+    │   └── tmp
+    │       └── cache
+    │           └── assets
+    └── integration
+
+47 directories

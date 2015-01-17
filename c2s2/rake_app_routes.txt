@@ -1,0 +1,12 @@
+          Prefix Verb URI Pattern       Controller#Action
+mountable_engine      /mountable_engine MountableEngine::Engine
+
+Routes for MountableEngine::Engine:
+    users GET    /users(.:format)          mountable_engine/users#index
+          POST   /users(.:format)          mountable_engine/users#create
+ new_user GET    /users/new(.:format)      mountable_engine/users#new
+edit_user GET    /users/:id/edit(.:format) mountable_engine/users#edit
+     user GET    /users/:id(.:format)      mountable_engine/users#show
+          PATCH  /users/:id(.:format)      mountable_engine/users#update
+          PUT    /users/:id(.:format)      mountable_engine/users#update
+          DELETE /users/:id(.:format)      mountable_engine/users#destroy

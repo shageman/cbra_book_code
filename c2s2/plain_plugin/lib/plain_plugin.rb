@@ -1,0 +1,2 @@
+module PlainPlugin
+end
