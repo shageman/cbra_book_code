@@ -1,0 +1,22 @@
+sportsball
+├── components
+│   └── app
+└── web_container
+    ├── bin
+    ├── config
+    ├── db
+    ├── log
+    ├── public
+    ├── spec
+    ├── tmp
+    ├── Gemfile
+    ├── Gemfile.bac
+    ├── Gemfile.lock
+    ├── README.rdoc
+    ├── Rakefile
+    ├── build.sh
+    ├── config.ru
+    ├── rails_server.sh
+    └── test.sh
+
+10 directories, 9 files

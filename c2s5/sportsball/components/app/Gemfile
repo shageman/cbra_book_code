@@ -1,5 +1,0 @@
-source "https://rubygems.org"
-
-gemspec
-
-gem "trueskill", git: "https://github.com/perrym5/trueskill", ref: "a93a3850b967ecbacafa9f3526f9175ddfe0bde8"
