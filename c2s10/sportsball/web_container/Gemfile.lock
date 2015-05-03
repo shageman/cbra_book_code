@@ -6,7 +6,7 @@ GIT
     trueskill (1.0.0)
 
 PATH
-  remote: ../components/app
+  remote: ../components
   specs:
     app (0.0.1)
       jquery-rails (= 3.1.2)
@@ -92,6 +92,11 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.1.9)
       sprockets-rails (~> 2.0)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.4)
+    rails_stdout_logging (0.0.3)
     railties (4.1.9)
       actionpack (= 4.1.9)
       activesupport (= 4.1.9)
@@ -125,7 +130,7 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
-    slim (3.0.1)
+    slim (3.0.3)
       temple (~> 0.7.3)
       tilt (>= 1.3.3, < 2.1)
     slim-rails (3.0.1)
@@ -170,6 +175,7 @@ DEPENDENCIES
   jquery-rails
   pg
   rails (= 4.1.9)
+  rails_12factor
   rspec-rails
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
