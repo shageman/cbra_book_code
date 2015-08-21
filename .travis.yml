@@ -1,0 +1,19 @@
+gemfile:
+  - c2s01/sportsball/Gemfile
+  - c2s02/sportsball/Gemfile
+  - c2s04/sportsball/Gemfile
+  - c2s05/sportsball/Gemfile
+  - c2s06/sportsball/Gemfile
+  - c3s01/sportsball/Gemfile
+  - c3s03/sportsball/Gemfile
+  - c3s04/sportsball/Gemfile
+  - c3s05/sportsball/Gemfile
+  - c3s05_finished/sportsball/Gemfile
+script:
+  - travis_retry ./build.sh
+before_install:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+  - cd $(dirname $BUNDLE_GEMFILE)
+rvm:
+  - 2.2.2
