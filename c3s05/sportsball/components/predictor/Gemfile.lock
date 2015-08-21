@@ -1,0 +1,41 @@
+GIT
+  remote: https://github.com/benjaminleesmith/trueskill
+  revision: e404f45af5b3fb86982881ce064a9c764cc6a901
+  ref: e404f45af5b3fb86982881ce064a9c764cc6a901
+  specs:
+    trueskill (1.0.0)
+
+PATH
+  remote: .
+  specs:
+    predictor (0.1.0)
+      trueskill
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    diff-lcs (1.2.5)
+    rake (10.4.2)
+    rspec (3.2.0)
+      rspec-core (~> 3.2.0)
+      rspec-expectations (~> 3.2.0)
+      rspec-mocks (~> 3.2.0)
+    rspec-core (3.2.3)
+      rspec-support (~> 3.2.0)
+    rspec-expectations (3.2.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.2.0)
+    rspec-mocks (3.2.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.2.0)
+    rspec-support (3.2.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.9)
+  predictor!
+  rake (~> 10.0)
+  rspec
+  trueskill!

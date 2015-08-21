@@ -1,0 +1,17 @@
+sportsball/components/predictor
+├── lib
+│   ├── predictor
+│   │   ├── prediction.rb
+│   │   └── predictor.rb
+│   └── predictor.rb
+├── spec
+│   ├── predictor_spec.rb
+│   └── spec_helper.rb
+├── Gemfile
+├── Gemfile.lock
+├── README.md
+├── Rakefile
+├── predictor.gemspec
+└── test.sh
+
+3 directories, 11 files

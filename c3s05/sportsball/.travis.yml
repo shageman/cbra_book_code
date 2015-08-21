@@ -1,0 +1,10 @@
+gemfile:
+  - Gemfile
+  - components/app_component/Gemfile
+  - components/predictor/Gemfile
+script:
+  - travis_retry ./test.sh
+before_install:
+  - cd $(dirname $BUNDLE_GEMFILE)
+rvm:
+  - 2.2.2

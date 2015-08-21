@@ -1,0 +1,51 @@
+.
+├── assets
+│   ├── images
+│   │   └── app
+│   │       └── logo.png
+│   ├── javascripts
+│   │   └── app
+│   │       └── application.js
+│   └── stylesheets
+│       └── app
+│           └── application.css
+├── controllers
+│   └── app
+│       ├── application_controller.rb
+│       ├── games_controller.rb
+│       ├── predictions_controller.rb
+│       ├── teams_controller.rb
+│       └── welcomes_controller.rb
+├── helpers
+│   └── app
+│       ├── application_helper.rb
+│       └── predictions_helper.rb
+├── models
+│   └── app
+│       ├── game.rb
+│       ├── prediction.rb
+│       ├── predictor.rb
+│       └── team.rb
+└── views
+    ├── app
+    │   ├── games
+    │   │   ├── _form.html.slim
+    │   │   ├── edit.html.slim
+    │   │   ├── index.html.slim
+    │   │   ├── new.html.slim
+    │   │   └── show.html.slim
+    │   ├── predictions
+    │   │   ├── create.html.slim
+    │   │   └── new.html.slim
+    │   ├── teams
+    │   │   ├── _form.html.slim
+    │   │   ├── edit.html.slim
+    │   │   ├── index.html.slim
+    │   │   └── new.html.slim
+    │   └── welcomes
+    │       └── show.html.slim
+    └── layouts
+        └── app
+            └── application.html.slim
+
+21 directories, 27 files
