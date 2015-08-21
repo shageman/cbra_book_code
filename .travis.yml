@@ -1,8 +1,4 @@
 gemfile:
-  - c2s01/sportsball/Gemfile
-  - c2s02/sportsball/Gemfile
-  - c2s04/sportsball/Gemfile
-  - c2s05/sportsball/Gemfile
   - c2s06/sportsball/Gemfile
   - c3s01/sportsball/Gemfile
   - c3s03/sportsball/Gemfile
