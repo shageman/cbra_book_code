@@ -18,9 +18,9 @@ Gem::Specification.new do |s|
   s.add_dependency "trueskill"
   s.add_dependency "jquery-rails", "3.1.2"
 
-  s.add_development_dependency "sqlite3"
-  s.add_development_dependency "rspec-rails"
-  s.add_development_dependency "shoulda-matchers"
-  s.add_development_dependency "database_cleaner"
-  s.add_development_dependency "capybara"
+  s.add_development_dependency "sqlite3", "1.3.10"
+  s.add_development_dependency "rspec-rails", "3.1.0"
+  s.add_development_dependency "shoulda-matchers", "2.7.0"
+  s.add_development_dependency "database_cleaner", "1.4.0"
+  s.add_development_dependency "capybara", "2.4.4"
 end

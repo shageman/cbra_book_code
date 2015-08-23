@@ -2,8 +2,8 @@
 
 exit_code=0
 
-echo "*** Running teaser engine specs"
-bundle install --jobs=3 --retry=3 | grep Installing
+echo "*** Running app engine specs"
+bundle install --jobs=3 --retry=3
 bundle exec rake db:create db:migrate
 RAILS_ENV=test bundle exec rake db:create db:migrate
 bundle exec rspec spec
