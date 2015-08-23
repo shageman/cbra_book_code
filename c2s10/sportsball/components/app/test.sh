@@ -2,7 +2,7 @@
 
 exit_code=0
 
-echo "*** Running teaser engine specs"
+echo "*** Running web_container engine specs"
 bundle install | grep Installing
 bundle exec rake db:create db:migrate
 RAILS_ENV=test bundle exec rake db:create db:migrate
