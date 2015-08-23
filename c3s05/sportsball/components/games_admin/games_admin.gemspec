@@ -7,12 +7,10 @@ require "games_admin/version"
 Gem::Specification.new do |s|
   s.name        = "games_admin"
   s.version     = GamesAdmin::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of GamesAdmin."
-  s.description = "TODO: Description of GamesAdmin."
-  s.license     = "MIT"
+  s.authors     = ["Your name"]
+  s.email       = ["Your email"]
+  s.summary     = "GamesAdmin"
+  s.description = "GamesAdmin"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
 
