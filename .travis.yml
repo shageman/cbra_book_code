@@ -1,12 +1,33 @@
 gemfile:
   - c2s06/sportsball/Gemfile
+  - c2s06/sportsball/components/app/Gemfile
+
   - c2s10/sportsball/web_container/Gemfile
+  - c2s10/sportsball/components/app/Gemfile
+
   - c3s03/sportsball/Gemfile
+  - c3s03/sportsball/components/app/Gemfile
+  - c3s03/sportsball/components/predictor/Gemfile
+
   - c3s04/sportsball/Gemfile
+  - c3s04/sportsball/components/app/Gemfile
+  - c3s04/sportsball/components/predictor/Gemfile
+
   - c3s05/sportsball/Gemfile
+  - c3s05/sportsball/components/app_component/Gemfile
+  - c3s05/sportsball/components/games_admin/Gemfile
+  - c3s05/sportsball/components/predictor/Gemfile
+
   - c3s05_finished/sportsball/Gemfile
+  - c3s05_finished/sportsball/components/app_component/Gemfile
+  - c3s05_finished/sportsball/components/games_admin/Gemfile
+  - c3s05_finished/sportsball/components/predictor/Gemfile
+  - c3s05_finished/sportsball/components/predictor_ui/Gemfile
+  - c3s05_finished/sportsball/components/teams_admin/Gemfile
+  - c3s05_finished/sportsball/components/welcome_ui/Gemfile
+
 script:
-  - travis_retry ./build.sh
+  - travis_retry ./test.sh
 before_install:
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
