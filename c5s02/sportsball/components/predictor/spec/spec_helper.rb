@@ -1,3 +1,3 @@
-$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'predictor'
+require_relative "../lib/predictor"
+
 require 'ostruct'

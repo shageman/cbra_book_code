@@ -10,15 +10,11 @@ PATH
   specs:
     app_component (0.0.1)
       jquery-rails (= 3.1.2)
-      predictor
       rails (= 4.1.9)
       slim-rails (= 3.0.1)
-      teams
     games (0.0.1)
       activerecord (= 4.1.9)
       teams
-    predictor (0.1.0)
-      trueskill
     teams (0.0.1)
       activerecord (= 4.1.9)
 
