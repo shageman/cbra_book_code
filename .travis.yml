@@ -41,15 +41,15 @@ gemfile:
   - c3s06_finished/sportsball/components/teams_admin/Gemfile
   - c3s06_finished/sportsball/components/welcome_ui/Gemfile
 
-  - c3s06_finished/sportsball/Gemfile
-  - c3s06_finished/sportsball/components/games/Gemfile
-  - c3s06_finished/sportsball/components/games_admin/Gemfile
-  - c3s06_finished/sportsball/components/predictor/Gemfile
-  - c3s06_finished/sportsball/components/predictor_ui/Gemfile
-  - c3s06_finished/sportsball/components/teams/Gemfile
-  - c3s06_finished/sportsball/components/teams_admin/Gemfile
-  - c3s06_finished/sportsball/components/web_ui/Gemfile
-  - c3s06_finished/sportsball/components/welcome_ui/Gemfile
+  - c3s07/sportsball/Gemfile
+  - c3s07/sportsball/components/games/Gemfile
+  - c3s07/sportsball/components/games_admin/Gemfile
+  - c3s07/sportsball/components/predictor/Gemfile
+  - c3s07/sportsball/components/predictor_ui/Gemfile
+  - c3s07/sportsball/components/teams/Gemfile
+  - c3s07/sportsball/components/teams_admin/Gemfile
+  - c3s07/sportsball/components/web_ui/Gemfile
+  - c3s07/sportsball/components/welcome_ui/Gemfile
 
   - c4s01/r4ia_examples_result/ticketee/Gemfile
   - c4s01/r4ia_examples_result/ticketee/components/persistence/Gemfile
