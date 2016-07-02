@@ -1,0 +1,9 @@
+<div class="tag">
+  <% if policy(ticket).tag? %>
+    <%= link_to "<span></span>".html_safe,
+      remove_ticket_tag_path(ticket, tag), method: :delete, remote: true,
+      class: "remove", title: "remove" %>
+  <% end %>
+  <%= link_to tag.name, search_project_tickets_path(ticket.project,
+    search: "tag:#{tag.name}") %>
+</div>

@@ -1,8 +1,8 @@
 source "https://rubygems.org"
-ruby '2.2.2'
+
 
 path "components" do
-  gem "app"
+  gem "app_component"
 end
 
 #Ensuring correct version of transitive dependency

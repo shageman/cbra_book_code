@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20150110184219) do
 
-  create_table "app_games", force: true do |t|
+  create_table "app_component_games", force: true do |t|
     t.datetime "date"
     t.string   "location"
     t.integer  "first_team_id"
@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 20150110184219) do
     t.datetime "updated_at"
   end
 
-  create_table "app_teams", force: true do |t|
+  create_table "app_component_teams", force: true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"

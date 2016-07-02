@@ -6,7 +6,7 @@ require 'rspec/rails'
 require 'capybara/rails'
 require 'capybara/rspec'
 
-Dir[App::Engine.root.join("spec/support/**/*.rb")].each {|f| require f}
+Dir[AppComponent::Engine.root.join("spec/support/**/*.rb")].each {|f| require f}
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|

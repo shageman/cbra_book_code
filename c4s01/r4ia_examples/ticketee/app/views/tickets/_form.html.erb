@@ -1,0 +1,16 @@
+<%= simple_form_for([project, ticket]) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :description %>
+  <%= render "tags/form", f: f %>
+
+  <div id="attachments">
+    <h3>Attachments</h3>
+    <%= render partial: "attachments/form", locals: { f: f, index: 0 } %>
+  </div>
+  <p>
+    <%= link_to "Add another file", new_attachment_path, remote: true,
+      id: "add_file", data: { params: {index: ticket.attachments.size} } %>
+  </p>
+
+  <%= f.button :submit, class: "btn-primary" %>
+<% end %>

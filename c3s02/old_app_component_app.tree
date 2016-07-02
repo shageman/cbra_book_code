@@ -1,0 +1,51 @@
+../c2s10/sportsball/components/app_component/app
+├── assets
+│   ├── images
+│   │   └── app_component
+│   │       └── logo.png
+│   ├── javascripts
+│   │   └── app_component
+│   │       └── application.js
+│   └── stylesheets
+│       └── app_component
+│           └── application.css
+├── controllers
+│   └── app_component
+│       ├── application_controller.rb
+│       ├── games_controller.rb
+│       ├── predictions_controller.rb
+│       ├── teams_controller.rb
+│       └── welcomes_controller.rb
+├── helpers
+│   └── app_component
+│       ├── application_helper.rb
+│       └── predictions_helper.rb
+├── models
+│   └── app_component
+│       ├── game.rb
+│       ├── prediction.rb
+│       ├── predictor.rb
+│       └── team.rb
+└── views
+    ├── app_component
+    │   ├── games
+    │   │   ├── _form.html.slim
+    │   │   ├── edit.html.slim
+    │   │   ├── index.html.slim
+    │   │   ├── new.html.slim
+    │   │   └── show.html.slim
+    │   ├── predictions
+    │   │   ├── create.html.slim
+    │   │   └── new.html.slim
+    │   ├── teams
+    │   │   ├── _form.html.slim
+    │   │   ├── edit.html.slim
+    │   │   ├── index.html.slim
+    │   │   └── new.html.slim
+    │   └── welcomes
+    │       └── show.html.slim
+    └── layouts
+        └── app_component
+            └── application.html.slim
+
+21 directories, 27 files

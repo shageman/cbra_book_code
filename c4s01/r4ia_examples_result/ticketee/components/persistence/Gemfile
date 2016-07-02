@@ -1,0 +1,7 @@
+
+source "https://rubygems.org"
+
+gemspec
+
+gem "searcher", github: "radar/searcher", ref: "c2975124e11677825481ced9539f16f0cb0640de"
+

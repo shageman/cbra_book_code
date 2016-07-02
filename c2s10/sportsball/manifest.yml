@@ -1,0 +1,9 @@
+---
+applications:
+- name: testrails
+  memory: 512M
+  host: niftyprospects
+  buildpack: ruby_buildpack
+  env:
+    RAILS_ENV: production
+  command: cd web_container && bin/rails server -p $PORT -e $RAILS_ENV

@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  mount App::Engine, at: "/"
+  mount AppComponent::Engine, at: "/"
 end

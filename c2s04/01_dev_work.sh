@@ -8,10 +8,10 @@ rails g scaffold game date:datetime location:string \
                       first_team_score:integer second_team_score:integer
 
 #cd ../..
-#rake app:install:migrations
+#rake app_component:install:migrations
 #
 #cd ..
-#tree sportsball/components/app/db/migrate > engine_migrations.tree
+#tree sportsball/components/app_component/db/migrate > engine_migrations.tree
 #tree sportsball/db/migrate > app_migrations.tree
 
 #fix ./add migration loading to engine file

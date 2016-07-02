@@ -1,13 +1,4 @@
 PATH
-  remote: .
-  specs:
-    games_admin (0.0.1)
-      app_component
-      jquery-rails (= 3.1.2)
-      rails (= 4.1.9)
-      slim-rails (= 3.0.1)
-
-PATH
   remote: ..
   specs:
     app_component (0.0.1)
@@ -17,6 +8,15 @@ PATH
       slim-rails (= 3.0.1)
     predictor (0.1.0)
       trueskill
+
+PATH
+  remote: .
+  specs:
+    games_admin (0.0.1)
+      app_component
+      jquery-rails (= 3.1.2)
+      rails (= 4.1.9)
+      slim-rails (= 3.0.1)
 
 GEM
   remote: https://rubygems.org/
@@ -145,3 +145,6 @@ DEPENDENCIES
   rspec-rails
   shoulda-matchers
   sqlite3
+
+BUNDLED WITH
+   1.11.2

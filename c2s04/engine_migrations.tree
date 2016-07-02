@@ -1,6 +1,6 @@
-sportsball/components/app/db/migrate
-├── 20150110181102_create_app_teams.rb
-├── 20150110184219_create_app_games.rb
+sportsball/components/app_component/db/migrate
+├── 20150110181102_create_app_component_teams.rb
+├── 20150110184219_create_app_component_games.rb
 └── 20150111154832_test.rb
 
 0 directories, 3 files

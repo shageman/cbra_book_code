@@ -1,0 +1,28 @@
+<header>
+  <h1><%= @user %></h1>
+
+  <ul class="actions">
+    <li>
+      <%= link_to "Edit User", [:edit, :admin, @user], class: "edit" %>
+    </li>
+    <li>
+      <%= link_to "Archive User", [:archive, :admin, @user], method: :patch,
+        data: { confirm: "Are you sure you want to archive this user?"},
+        class: "delete" %>
+    </li>
+  </ul>
+</header>
+
+<header>
+  <h2>Roles</h2>
+</header>
+
+<% if @user.roles.any? %>
+  <ul>
+    <% @user.roles.each do |role| %>
+      <li><%= role.project.name %>: <%= role.role.titleize %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>This user has no roles.</p>
+<% end %>

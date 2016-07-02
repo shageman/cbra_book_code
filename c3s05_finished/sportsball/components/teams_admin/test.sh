@@ -3,7 +3,7 @@
 exit_code=0
 
 echo "*** Running teams_admin engine specs"
-bundle install | grep Installing
+#bundle install | grep Installing
 RAILS_ENV=test bundle exec rake db:create
 RAILS_ENV=test bundle exec rake db:migrate
 bundle exec rspec spec

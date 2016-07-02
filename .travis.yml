@@ -1,17 +1,13 @@
 gemfile:
   - c2s06/sportsball/Gemfile
-  - c2s06/sportsball/components/app/Gemfile
+  - c2s06/sportsball/components/app_component/Gemfile
 
   - c2s10/sportsball/web_container/Gemfile
-  - c2s10/sportsball/components/app/Gemfile
+  - c2s10/sportsball/components/app_component/Gemfile
 
   - c3s03/sportsball/Gemfile
-  - c3s03/sportsball/components/app/Gemfile
+  - c3s03/sportsball/components/app_component/Gemfile
   - c3s03/sportsball/components/predictor/Gemfile
-
-  - c3s04/sportsball/Gemfile
-  - c3s04/sportsball/components/app/Gemfile
-  - c3s04/sportsball/components/predictor/Gemfile
 
   - c3s05/sportsball/Gemfile
   - c3s05/sportsball/components/app_component/Gemfile

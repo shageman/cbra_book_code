@@ -11,7 +11,8 @@ for test_script in $(find . -name build.sh); do
   echo "#############################################################"
   pushd `dirname $test_script` > /dev/null
   source "$HOME/.rvm/scripts/rvm"
-  rvm use $(cat .ruby-version)@$(cat .ruby-gemset) --create
+#  rvm use $(cat .ruby-version)@$(cat .ruby-gemset) --create
+  rvm use 2.3.0
   ./build.sh
   result+=$?
   popd > /dev/null

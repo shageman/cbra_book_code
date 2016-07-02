@@ -3,7 +3,7 @@
 exit_code=0
 
 echo "*** Running app_component engine specs"
-bundle install | grep Installing
+#bundle install | grep Installing
 bundle exec rake db:create db:migrate
 RAILS_ENV=test bundle exec rake db:create
 RAILS_ENV=test bundle exec rake db:migrate

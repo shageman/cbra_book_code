@@ -1,6 +1,6 @@
 sportsball
 ├── components
-│   └── app
+│   └── app_component
 └── web_container
     ├── bin
     ├── config

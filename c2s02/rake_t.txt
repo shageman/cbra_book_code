@@ -1,57 +1,131 @@
-rake app:about                                # List versions of all Rails frameworks and the environment
-rake app:assets:clean[keep]                   # Remove old compiled assets
-rake app:assets:clobber                       # Remove compiled assets
-rake app:assets:environment                   # Load asset compile environment
-rake app:assets:precompile                    # Compile all the assets named in config.assets.precompile
-rake app:cache_digests:dependencies           # Lookup first-level dependencies for TEMPLATE (like messages/show or comments/_comment.html)
-rake app:cache_digests:nested_dependencies    # Lookup nested dependencies for TEMPLATE (like messages/show or comments/_comment.html)
-rake app:db:create                            # Creates the database from DATABASE_URL or config/database.yml for the current RAILS_ENV (use db:create:all to create all databases in the config)
-rake app:db:drop                              # Drops the database from DATABASE_URL or config/database.yml for the current RAILS_ENV (use db:drop:all to drop all databases in the config)
-rake app:db:fixtures:load                     # Load fixtures into the current environment's database
-rake app:db:migrate                           # Migrate the database (options: VERSION=x, VERBOSE=false, SCOPE=blog)
-rake app:db:migrate:status                    # Display status of migrations
-rake app:db:rollback                          # Rolls the schema back to the previous version (specify steps w/ STEP=n)
-rake app:db:schema:cache:clear                # Clear a db/schema_cache.dump file
-rake app:db:schema:cache:dump                 # Create a db/schema_cache.dump file
-rake app:db:schema:dump                       # Create a db/schema.rb file that is portable against any DB supported by AR
-rake app:db:schema:load                       # Load a schema.rb file into the database
-rake app:db:seed                              # Load the seed data from db/seeds.rb
-rake app:db:setup                             # Create the database, load the schema, and initialize with the seed data (use db:reset to also drop the database first)
-rake app:db:structure:dump                    # Dump the database structure to db/structure.sql
-rake app:db:version                           # Retrieves the current schema version number
-rake app:doc:app                              # Generate docs for the app -- also available doc:rails, doc:guides (options: TEMPLATE=/rdoc-template.rb, TITLE="Custom Title")
-rake app:log:clear                            # Truncates all *.log files in log/ to zero bytes (specify which logs with LOGS=test,development)
-rake app:middleware                           # Prints out your Rack middleware stack
-rake app:mountable_engine:install:migrations  # Copy migrations from mountable_engine to application
-rake app:notes                                # Enumerate all annotations (use notes:optimize, :fixme, :todo for focus)
-rake app:notes:custom                         # Enumerate a custom annotation, specify with ANNOTATION=CUSTOM
-rake app:rails:template                       # Applies the template supplied by LOCATION=(/path/to/template) or URL
-rake app:rails:update                         # Update configs and some other initially generated files (or use just update:configs or update:bin)
-rake app:routes                               # Print out all defined routes in match order, with names
-rake app:secret                               # Generate a cryptographically secure secret key (this is typically used to generate a secret for cookie sessions)
-rake app:stats                                # Report code statistics (KLOCs, etc) from the application
-rake app:test                                 # Runs test:units, test:functionals, test:generators, test:integration together
-rake app:test:all                             # Run tests quickly by merging all types and not resetting db
-rake app:test:all:db                          # Run tests quickly, but also reset db
-rake app:time:zones:all                       # Displays all time zones, also available: time:zones:us, time:zones:local -- filter with OFFSET parameter, e.g., OFFSET=-6
-rake app:tmp:clear                            # Clear session, cache, and socket files from tmp/ (narrow w/ tmp:sessions:clear, tmp:cache:clear, tmp:sockets:clear)
-rake app:tmp:create                           # Creates tmp directories for sessions, cache, sockets, and pids
-rake build                                    # Build mountable_engine-0.0.1.gem into the pkg directory
-rake clobber_rdoc                             # Remove RDoc HTML files
-rake db:create                                # Create the database from config/database.yml for the current Rails.env (use db:create:all to create all databases in the config)
-rake db:drop                                  # Drops the database for the current Rails.env (use db:drop:all to drop all databases)
-rake db:fixtures:load                         # Load fixtures into the current environment's database
-rake db:migrate                               # Migrate the database (options: VERSION=x, VERBOSE=false)
-rake db:migrate:status                        # Display status of migrations
-rake db:rollback                              # Rolls the schema back to the previous version (specify steps w/ STEP=n)
-rake db:schema:dump                           # Create a db/schema.rb file that can be portably used against any DB supported by AR
-rake db:schema:load                           # Load a schema.rb file into the database
-rake db:seed                                  # Load the seed data from db/seeds.rb
-rake db:setup                                 # Create the database, load the schema, and initialize with the seed data (use db:reset to also drop the db first)
-rake db:structure:dump                        # Dump the database structure to an SQL file
-rake db:version                               # Retrieves the current schema version number
-rake install                                  # Build and install mountable_engine-0.0.1.gem into system gems
-rake rdoc                                     # Build RDoc HTML files
-rake release                                  # Create tag v0.0.1 and build and push mountable_engine-0.0.1.gem to Rubygems
-rake rerdoc                                   # Rebuild RDoc HTML files
-rake test                                     # Run tests
+rake app:about                                
+    # List versions of all Rails frameworks and the environment
+rake app:assets:clean[keep]                   
+    # Remove old compiled assets
+rake app:assets:clobber                       
+    # Remove compiled assets
+rake app:assets:environment                   
+    # Load asset compile environment
+rake app:assets:precompile                    
+    # Compile all the assets named in config.assets.precompile
+
+   ...
+
+rake app:cache_digests:dependencies
+    # Lookup first-level dependencies for TEMPLATE (like messages/show or comments/_comment.html)
+rake app:cache_digests:nested_dependencies    
+    # Lookup nested dependencies for TEMPLATE (like messages/show or comments/_comment.html)
+rake app:db:create                            
+    # Creates the database from DATABASE_URL or config/database.yml for the current RAILS_ENV (use db:create:all to create all databases in the config)
+rake app:db:drop                              
+    # Drops the database from DATABASE_URL or config/database.yml for the current RAILS_ENV (use db:drop:all to drop all databases in the config)
+rake app:db:fixtures:load                     
+    # Load fixtures into the current environment's database
+rake app:db:migrate                           
+    # Migrate the database (options: VERSION=x, VERBOSE=false, SCOPE=blog)
+rake app:db:migrate:status                    
+    # Display status of migrations
+rake app:db:rollback                          
+    # Rolls the schema back to the previous version (specify steps w/ STEP=n)
+rake app:db:schema:cache:clear                
+    # Clear a db/schema_cache.dump file
+rake app:db:schema:cache:dump                 
+    # Create a db/schema_cache.dump file
+rake app:db:schema:dump                       
+    # Create a db/schema.rb file that is portable against any DB supported by AR
+rake app:db:schema:load                       
+    # Load a schema.rb file into the database
+rake app:db:seed                              
+    # Load the seed data from db/seeds.rb
+rake app:db:setup                             
+    # Create the database, load the schema, and initialize with the seed data (use db:reset to also drop the database first)
+rake app:db:structure:dump                    
+    # Dump the database structure to db/structure.sql
+rake app:db:version                           
+    # Retrieves the current schema version number
+rake app:doc:app                              
+    # Generate docs for the app -- also available doc:rails, doc:guides (options: TEMPLATE=/rdoc-template.rb, TITLE="Custom Title")
+rake app:log:clear                            
+    # Truncates all *.log files in log/ to zero bytes (specify which logs with LOGS=test,development)
+rake app:middleware                           
+    # Prints out your Rack middleware stack
+rake app:mountable_engine:install:migrations  
+    # Copy migrations from mountable_engine to application
+rake app:notes                                
+    # Enumerate all annotations (use notes:optimize, :fixme, :todo for focus)
+rake app:notes:custom                         
+    # Enumerate a custom annotation, specify with ANNOTATION=CUSTOM
+rake app:rails:template                       
+    # Applies the template supplied by LOCATION=(/path/to/template) or URL
+rake app:rails:update                         
+    # Update configs and some other initially generated files (or use just update:configs or update:bin)
+
+
+   ...
+
+rake app:routes                               
+    # Print out all defined routes in match order, with names
+rake app:secret                               
+    # Generate a cryptographically secure secret key
+    # (this is typically used to generate a secret for cookie sessions)
+rake app:stats                                
+    # Report code statistics (KLOCs, etc) from the application
+rake app:test                                 
+    # Runs test:units, test:functionals, test:generators,
+    # test:integration together
+rake app:test:all                             
+    # Run tests quickly by merging all types and not resetting db
+
+   ...
+
+rake app:test:all:db
+    # Run tests quickly, but also reset db
+rake app:time:zones:all                       
+    # Displays all time zones, also available: time:zones:us, time:zones:local -- filter with OFFSET parameter, e.g., OFFSET=-6
+rake app:tmp:clear                            
+    # Clear session, cache, and socket files from tmp/ (narrow w/ tmp:sessions:clear, tmp:cache:clear, tmp:sockets:clear)
+rake app:tmp:create                           
+    # Creates tmp directories for sessions, cache, sockets, and pids
+
+
+rake build
+    # Build mountable_engine-0.0.1.gem into the pkg directory
+rake clobber_rdoc                             
+    # Remove RDoc HTML files
+rake db:create                                
+    # Create the database from config/database.yml for the current Rails.env (use db:create:all to create all databases in the config)
+rake db:drop                                  
+    # Drops the database for the current Rails.env (use db:drop:all to drop all databases)
+rake db:fixtures:load                         
+    # Load fixtures into the current environment's database
+
+   ...
+
+rake db:migrate
+    # Migrate the database (options: VERSION=x, VERBOSE=false)
+rake db:migrate:status                        
+    # Display status of migrations
+rake db:rollback                              
+    # Rolls the schema back to the previous version (specify steps w/ STEP=n)
+rake db:schema:dump                           
+    # Create a db/schema.rb file that can be portably used against any DB supported by AR
+rake db:schema:load                           
+    # Load a schema.rb file into the database
+rake db:seed                                  
+    # Load the seed data from db/seeds.rb
+rake db:setup                                 
+    # Create the database, load the schema, and initialize with the seed data (use db:reset to also drop the db first)
+rake db:structure:dump                        
+    # Dump the database structure to an SQL file
+rake db:version                               
+    # Retrieves the current schema version number
+rake install                                  
+    # Build and install mountable_engine-0.0.1.gem into system gems
+rake rdoc                                     
+    # Build RDoc HTML files
+rake release                                  
+    # Create tag v0.0.1 and build and push mountable_engine-0.0.1.gem to Rubygems
+rake rerdoc                                   
+    # Rebuild RDoc HTML files
+rake test                                     
+    # Run tests

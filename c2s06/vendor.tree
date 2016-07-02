@@ -1,4 +1,4 @@
-sportsball/components/app/vendor
+sportsball/components/app_component/vendor
 └── assets
     ├── javascripts
     │   └── app

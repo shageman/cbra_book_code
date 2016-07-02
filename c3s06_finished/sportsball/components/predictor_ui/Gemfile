@@ -1,0 +1,16 @@
+
+
+source "https://rubygems.org"
+
+gemspec
+
+gem "trueskill", git: "https://github.com/benjaminleesmith/trueskill", ref: "e404f45af5b3fb86982881ce064a9c764cc6a901"
+
+path "../" do
+  gem "predictor"
+  gem "app_component"
+  gem "teams"
+  gem "games"
+end
+
+

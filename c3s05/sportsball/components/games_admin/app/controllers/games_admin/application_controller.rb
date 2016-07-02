@@ -4,5 +4,3 @@ module GamesAdmin
     layout "app_component/application"
   end
 end
-
-
