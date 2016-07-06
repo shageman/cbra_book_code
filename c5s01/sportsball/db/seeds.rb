@@ -7,10 +7,10 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-team1 = Teams::TeamRepository.new.create Teams::Team.new(nil, "UofL")
-team2 = Teams::TeamRepository.new.create Teams::Team.new(nil, "UK")
-team3 = Teams::TeamRepository.new.create Teams::Team.new(nil, "UT")
-team4 = Teams::TeamRepository.new.create Teams::Team.new(nil, "Duke")
+team1 = TeamsStore::TeamRepository.new.create Teams::Team.new(nil, "UofL")
+team2 = TeamsStore::TeamRepository.new.create Teams::Team.new(nil, "UK")
+team3 = TeamsStore::TeamRepository.new.create Teams::Team.new(nil, "UT")
+team4 = TeamsStore::TeamRepository.new.create Teams::Team.new(nil, "Duke")
 
 Games::Game.create!(date: 9.days.ago, location: "Lville", first_team_id: team1.id, second_team_id: team2.id, winning_team: 1, first_team_score: 1, second_team_score: 2)
 Games::Game.create!(date: 8.days.ago, location: "Lville", first_team_id: team1.id, second_team_id: team3.id, winning_team: 1, first_team_score: 1, second_team_score: 2)

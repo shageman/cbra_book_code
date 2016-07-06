@@ -23,8 +23,8 @@ RSpec.describe "Engine 'App'", :type => :feature do
   end
 
   it "can predict" do
-    Teams::TeamRepository.new.create Teams::Team.new(nil, "UofL")
-    Teams::TeamRepository.new.create Teams::Team.new(nil, "UK")
+    TeamsStore::TeamRepository.new.create Teams::Team.new(nil, "UofL")
+    TeamsStore::TeamRepository.new.create Teams::Team.new(nil, "UK")
 
     visit "/"
     click_link "Predictions"

@@ -10,19 +10,19 @@ PATH
   specs:
     games (0.0.1)
       activerecord (= 4.1.9)
-      teams
+      teams_store
     games_admin (0.0.1)
       games
       jquery-rails (= 3.1.2)
       rails (= 4.1.9)
       slim-rails (= 3.0.1)
-      teams
+      teams_store
       web_ui
     predict_game (0.0.1)
       games
       predictor
       publisher
-      teams
+      teams_store
     predictor (0.1.0)
       trueskill
     predictor_ui (0.0.1)
@@ -31,17 +31,20 @@ PATH
       predict_game
       rails (= 4.1.9)
       slim-rails (= 3.0.1)
-      teams
+      teams_store
       web_ui
     publisher (0.0.1)
-    teams (0.0.1)
+    teams (0.1.0)
       activemodel (= 4.1.9)
     teams_admin (0.0.1)
       jquery-rails (= 3.1.2)
       rails (= 4.1.9)
       slim-rails (= 3.0.1)
       teams
+      teams_store
       web_ui
+    teams_store (0.0.1)
+      teams
     web_ui (0.0.1)
       jquery-rails (= 3.1.2)
       rails (= 4.1.9)

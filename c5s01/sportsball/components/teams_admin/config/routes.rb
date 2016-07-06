@@ -1,3 +1,3 @@
 TeamsAdmin::Engine.routes.draw do
-  resources :teams
+  resources :teams, as: 'teams_teams'
 end

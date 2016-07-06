@@ -17,16 +17,6 @@ describe PredictGame do
     end
   end
 
-  describe "initialization" do
-    it "will use all teams if no teams param is passed in"
-
-    it "will use all games if no games param is passed in"
-
-    it "will not get all teams if a teams param is passed in"
-
-    it "will not get all games if a games param is passed in"
-  end
-
   describe "perform" do
     before do
       @subscriber = PredictionSubscriber.new

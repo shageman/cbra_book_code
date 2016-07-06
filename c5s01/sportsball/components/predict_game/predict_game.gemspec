@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "predictor"
   spec.add_dependency "publisher"
-  spec.add_dependency "teams"
+  spec.add_dependency "teams_store"
   spec.add_dependency "games"
 
   spec.add_development_dependency "bundler", "~> 1.11"

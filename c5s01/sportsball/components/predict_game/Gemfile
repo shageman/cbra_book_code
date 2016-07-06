@@ -6,6 +6,6 @@ gemspec
 path "../" do
   gem "predictor"
   gem "publisher"
-  gem "teams"
+  gem "teams_store"
   gem "games"
 end

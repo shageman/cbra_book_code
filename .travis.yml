@@ -61,9 +61,10 @@ gemfile:
   - c5s01/sportsball/components/predictor/Gemfile
   - c5s01/sportsball/components/predictor_ui/Gemfile
   - c5s01/sportsball/components/publisher/Gemfile
+  - c5s01/sportsball/components/teams/Gemfile
   - c5s01/sportsball/components/teams_admin/Gemfile
-  - c5s01/sportsball/components/teams_implementations/teams_db/Gemfile
-  - c5s01/sportsball/components/teams_implementations/teams_mem/Gemfile
+  - c5s01/sportsball/components/teams_store_db/Gemfile
+  - c5s01/sportsball/components/teams_store_mem/Gemfile
   - c5s01/sportsball/components/web_ui/Gemfile
   - c5s01/sportsball/components/welcome_ui/Gemfile
 

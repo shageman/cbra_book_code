@@ -5,8 +5,8 @@ RSpec.describe "teams_admin/teams/new", :type => :view do
 
   it "renders new team form" do
     render
-    assert_select "form[action=?][method=?]", teams_admin.teams_path, "post" do
-      assert_select "input#team_name[name=?]", "team[name]"
+    assert_select "form[action=?][method=?]", teams_admin.teams_teams_path, "post" do
+      assert_select "input#teams_team_name[name=?]", "teams_team[name]"
     end
   end
 end

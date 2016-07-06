@@ -31,9 +31,9 @@ RSpec.describe TeamsAdmin::TeamsController, :type => :controller do
   describe "POST create" do
     describe "with valid params" do
       it "creates a new Teams::Team" do
-        previous_count = Teams::TeamRepository.new.get_all.count
+        previous_count = TeamsStore::TeamRepository.new.get_all.count
         post :create, {:team => valid_attributes}, valid_session
-        expect(Teams::TeamRepository.new.get_all.count - 1).
+        expect(TeamsStore::TeamRepository.new.get_all.count - 1).
             to eq (previous_count)
       end
 
@@ -45,7 +45,7 @@ RSpec.describe TeamsAdmin::TeamsController, :type => :controller do
 
       it "redirects to the index" do
         post :create, {:team => valid_attributes}, valid_session
-        expect(response).to redirect_to(teams_path)
+        expect(response).to redirect_to(teams_teams_path)
       end
     end
 
@@ -71,7 +71,7 @@ RSpec.describe TeamsAdmin::TeamsController, :type => :controller do
       it "updates the requested team" do
         existing_team = create_team
         put :update, {:id => existing_team.to_param, :team => new_attributes}, valid_session
-        team = Teams::TeamRepository.new.get(existing_team.id)
+        team = TeamsStore::TeamRepository.new.get(existing_team.id)
         expect(team.name).to eq("new team name")
       end
 
@@ -84,7 +84,7 @@ RSpec.describe TeamsAdmin::TeamsController, :type => :controller do
       it "redirects to the index" do
         team = create_team
         put :update, {:id => team.to_param, :team => valid_attributes}, valid_session
-        expect(response).to redirect_to(teams_path)
+        expect(response).to redirect_to(teams_teams_path)
       end
     end
 
@@ -106,17 +106,17 @@ RSpec.describe TeamsAdmin::TeamsController, :type => :controller do
   describe "DELETE destroy" do
     it "destroys the requested team" do
       team = create_team
-      previous_count = Teams::TeamRepository.new.get_all.count
+      previous_count = TeamsStore::TeamRepository.new.get_all.count
       delete :destroy, {:id => team.to_param}, valid_session
 
-      expect(Teams::TeamRepository.new.get_all.count + 1).
+      expect(TeamsStore::TeamRepository.new.get_all.count + 1).
           to eq (previous_count)
     end
 
     it "redirects to the teams list" do
       team = create_team
       delete :destroy, {:id => team.to_param}, valid_session
-      expect(response).to redirect_to(teams_url)
+      expect(response).to redirect_to(teams_teams_url)
     end
   end
 end

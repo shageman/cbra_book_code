@@ -1,15 +1,17 @@
 PATH
   remote: ../
   specs:
-    teams (0.0.1)
+    teams (0.1.0)
       activemodel (= 4.1.9)
+    teams_store (0.0.1)
+      teams
 
 PATH
   remote: .
   specs:
     games (0.0.1)
       activerecord (= 4.1.9)
-      teams
+      teams_store
 
 GEM
   remote: https://rubygems.org/
@@ -87,7 +89,7 @@ DEPENDENCIES
   rspec-rails
   shoulda-matchers
   sqlite3
-  teams!
+  teams_store!
 
 BUNDLED WITH
    1.11.2

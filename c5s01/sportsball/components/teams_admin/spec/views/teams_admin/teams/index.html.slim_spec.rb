@@ -1,8 +1,8 @@
 RSpec.describe "teams_admin/teams/index", :type => :view do
   before(:each) do
-    Teams::TeamRepository.new.create(Teams::Team.new(nil, "MyString"))
-    Teams::TeamRepository.new.create(Teams::Team.new(nil, "MyString"))
-    assign(:teams, Teams::TeamRepository.new.get_all)
+    TeamsStore::TeamRepository.new.create(Teams::Team.new(nil, "MyString"))
+    TeamsStore::TeamRepository.new.create(Teams::Team.new(nil, "MyString"))
+    assign(:teams, TeamsStore::TeamRepository.new.get_all)
   end
 
   it "renders a list of teams" do

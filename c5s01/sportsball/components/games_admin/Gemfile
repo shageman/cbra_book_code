@@ -8,7 +8,7 @@ gem "trueskill", git: "https://github.com/benjaminleesmith/trueskill", ref: "e40
 
 path "../" do
   gem "web_ui"
-  gem "teams"
+  gem "teams_store"
   gem "games"
 end
 

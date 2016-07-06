@@ -2,9 +2,7 @@ module PredictGame
   class PredictGame
     include Publisher
 
-    def initialize(
-        teams = Teams::TeamRepository.new.get_all,
-        games = Games::Game.all)
+    def initialize(teams, games)
       @predictor = ::Predictor::Predictor.new(teams)
       @predictor.learn(games)
     end

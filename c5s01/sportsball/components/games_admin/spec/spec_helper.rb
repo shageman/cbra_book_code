@@ -10,7 +10,7 @@ require "database_cleaner"
 require "capybara/rails"
 require "capybara/rspec"
 
-require "teams/test_helpers"
+require "teams_store/test_helpers"
 require "games/test_helpers"
 
 Dir[GamesAdmin::Engine.root.join("spec/support/**/*.rb")].each {|f| require f}
@@ -35,13 +35,13 @@ RSpec.configure do |config|
   end
 
   config.around(:each) do |example|
-    Teams.Db.reset
+    TeamsStore::Db.reset
     DatabaseCleaner.cleaning do
       example.run
     end
   end
 
-  config.include Teams::ObjectCreationMethods
+  config.include TeamsStore::ObjectCreationMethods
   config.include Games::ObjectCreationMethods
 end
 

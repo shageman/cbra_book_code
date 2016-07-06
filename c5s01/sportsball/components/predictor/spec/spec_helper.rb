@@ -1,2 +1,2 @@
-require_relative "../../lib/predictor"
+require_relative "../lib/predictor"
 require 'ostruct'

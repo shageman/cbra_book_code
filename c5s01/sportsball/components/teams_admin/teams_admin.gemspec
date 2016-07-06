@@ -13,6 +13,7 @@ Gem::Specification.new do |s|
   s.add_dependency "jquery-rails", "3.1.2"
 
   s.add_dependency "web_ui"
+  s.add_dependency "teams_store"
   s.add_dependency "teams"
 
   s.add_development_dependency "sqlite3"
