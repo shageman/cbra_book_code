@@ -1,6 +1,6 @@
 RSpec.describe "app_component/games/edit", :type => :view do
-  before(:each) do
-    @game = assign(:game, create_game)
+  before :each do
+    @game = assign :game, create_game
   end
 
   it "renders the edit game form" do

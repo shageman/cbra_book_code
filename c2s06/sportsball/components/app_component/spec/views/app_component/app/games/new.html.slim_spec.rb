@@ -1,13 +1,13 @@
 RSpec.describe "app_component/games/new", :type => :view do
-  before(:each) do
-    assign(:game, AppComponent::Game.new(
+  before :each do
+    assign :game, AppComponent::Game.new(
       :location => "MyString",
       :first_team_id => 1,
       :second_team_id => 1,
       :winning_team => 1,
       :first_team_score => 1,
       :second_team_score => 1
-    ))
+    )
   end
 
   it "renders new game form" do

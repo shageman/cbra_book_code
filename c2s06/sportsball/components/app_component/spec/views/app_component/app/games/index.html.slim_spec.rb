@@ -1,6 +1,8 @@
 RSpec.describe "app_component/games/index", :type => :view do
-  before(:each) do
-    assign(:games, [create_game(location: "Location"), create_game(location: "Location")])
+  before :each do
+    assign :games, [
+        create_game(location: "Location"), create_game(location: "Location")
+    ]
   end
 
   it "renders a list of games" do

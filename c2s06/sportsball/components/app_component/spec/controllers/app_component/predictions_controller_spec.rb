@@ -9,7 +9,7 @@ RSpec.describe AppComponent::PredictionsController, :type => :controller do
   describe "GET new" do
     it "assigns all teams as @teams" do
       get :new, {}, {}
-      expect(assigns(:teams)).to eq([@team1, @team2])
+      expect(assigns(:teams)).to eq [@team1, @team2]
     end
   end
 
@@ -20,9 +20,9 @@ RSpec.describe AppComponent::PredictionsController, :type => :controller do
            {}
 
       prediction = assigns(:prediction)
-      expect(prediction).to be_a(AppComponent::Prediction)
-      expect(prediction.first_team).to eq(@team1)
-      expect(prediction.second_team).to eq(@team2)
+      expect(prediction).to be_a AppComponent::Prediction
+      expect(prediction.first_team).to eq @team1
+      expect(prediction.second_team).to eq @team2
     end
   end
 end

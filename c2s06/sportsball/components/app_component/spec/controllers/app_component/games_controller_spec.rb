@@ -14,7 +14,7 @@ RSpec.describe AppComponent::GamesController, :type => :controller do
     it "assigns all games as @games" do
       game = create_game
       get :index, {}, valid_session
-      expect(assigns(:games)).to eq([game])
+      expect(assigns(:games)).to eq [game]
     end
   end
 
@@ -22,14 +22,14 @@ RSpec.describe AppComponent::GamesController, :type => :controller do
     it "assigns the requested game as @game" do
       game = create_game
       get :show, {:id => game.to_param}, valid_session
-      expect(assigns(:game)).to eq(game)
+      expect(assigns(:game)).to eq game
     end
   end
 
   describe "GET new" do
     it "assigns a new game as @game" do
       get :new, {}, valid_session
-      expect(assigns(:game)).to be_a_new(AppComponent::Game)
+      expect(assigns(:game)).to be_a_new AppComponent::Game
     end
   end
 
@@ -37,7 +37,7 @@ RSpec.describe AppComponent::GamesController, :type => :controller do
     it "assigns the requested game as @game" do
       game = create_game
       get :edit, {:id => game.to_param}, valid_session
-      expect(assigns(:game)).to eq(game)
+      expect(assigns(:game)).to eq game
     end
   end
 
@@ -46,30 +46,30 @@ RSpec.describe AppComponent::GamesController, :type => :controller do
       it "creates a new AppComponent::Game" do
         expect {
           post :create, {:game => valid_attributes}, valid_session
-        }.to change(AppComponent::Game, :count).by(1)
+        }.to change(AppComponent::Game, :count).by 1
       end
 
       it "assigns a newly created game as @game" do
         post :create, {:game => valid_attributes}, valid_session
-        expect(assigns(:game)).to be_a(AppComponent::Game)
+        expect(assigns(:game)).to be_a AppComponent::Game
         expect(assigns(:game)).to be_persisted
       end
 
       it "redirects to the created game" do
         post :create, {:game => valid_attributes}, valid_session
-        expect(response).to redirect_to(AppComponent::Game.last)
+        expect(response).to redirect_to AppComponent::Game.last
       end
     end
 
     describe "with invalid params" do
       it "assigns a newly created but unsaved game as @game" do
         post :create, {:game => invalid_attributes}, valid_session
-        expect(assigns(:game)).to be_a_new(AppComponent::Game)
+        expect(assigns(:game)).to be_a_new AppComponent::Game
       end
 
       it "re-renders the 'new' template" do
         post :create, {:game => invalid_attributes}, valid_session
-        expect(response).to render_template("new")
+        expect(response).to render_template "new"
       end
     end
   end
@@ -81,19 +81,19 @@ RSpec.describe AppComponent::GamesController, :type => :controller do
         new_time = 1.day.ago
         put :update, {:id => game.to_param, :game => {date: new_time}}, valid_session
         game.reload
-        expect(assigns(:game).date).to be_within(1).of(new_time)
+        expect(assigns(:game).date).to be_within(1).of new_time
       end
 
       it "assigns the requested game as @game" do
         game = create_game
         put :update, {:id => game.to_param, :game => valid_attributes}, valid_session
-        expect(assigns(:game)).to eq(game)
+        expect(assigns(:game)).to eq game
       end
 
       it "redirects to the game" do
         game = create_game
         put :update, {:id => game.to_param, :game => valid_attributes}, valid_session
-        expect(response).to redirect_to(game)
+        expect(response).to redirect_to game
       end
     end
 
@@ -101,13 +101,13 @@ RSpec.describe AppComponent::GamesController, :type => :controller do
       it "assigns the game as @game" do
         game = create_game
         put :update, {:id => game.to_param, :game => invalid_attributes}, valid_session
-        expect(assigns(:game)).to eq(game)
+        expect(assigns(:game)).to eq game
       end
 
       it "re-renders the 'edit' template" do
         game = create_game
         put :update, {:id => game.to_param, :game => invalid_attributes}, valid_session
-        expect(response).to render_template("edit")
+        expect(response).to render_template "edit"
       end
     end
   end
@@ -117,13 +117,13 @@ RSpec.describe AppComponent::GamesController, :type => :controller do
       game = create_game
       expect {
         delete :destroy, {:id => game.to_param}, valid_session
-      }.to change(AppComponent::Game, :count).by(-1)
+      }.to change(AppComponent::Game, :count).by -1
     end
 
     it "redirects to the games list" do
       game = create_game
       delete :destroy, {:id => game.to_param}, valid_session
-      expect(response).to redirect_to(games_url)
+      expect(response).to redirect_to games_url
     end
   end
 end

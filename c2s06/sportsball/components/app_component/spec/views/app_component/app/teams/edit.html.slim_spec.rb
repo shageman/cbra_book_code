@@ -1,8 +1,8 @@
 RSpec.describe "app_component/teams/edit", :type => :view do
-  before(:each) do
-    @team = assign(:team, AppComponent::Team.create!(
+  before :each do
+    @team = assign :team, AppComponent::Team.create!(
       :name => "MyString"
-    ))
+    )
   end
 
   it "renders the edit team form" do
