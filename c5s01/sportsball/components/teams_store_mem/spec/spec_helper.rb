@@ -23,7 +23,7 @@ RSpec.configure do |config|
   config.order = :random
   Kernel.srand config.seed
 
-  config.before(:each) do
+  config.before :each do
     TeamsStore::Db.reset
   end
 

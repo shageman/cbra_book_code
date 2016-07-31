@@ -4,7 +4,7 @@ RSpec.configure do |config|
     DatabaseCleaner.clean_with(:deletion)
   end
 
-  config.before(:each) do
+  config.before :each do
     DatabaseCleaner.start
   end
 
