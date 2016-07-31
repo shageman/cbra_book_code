@@ -1,5 +1,5 @@
 RSpec.describe "games_admin/games/show", :type => :view do
-  before(:each) do
+  before :each do
     @game = assign(:game, create_game(location: "Location"))
   end
 

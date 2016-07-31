@@ -1,15 +1,15 @@
 require 'rails_helper'
 
 RSpec.describe "games/edit", :type => :view do
-  before(:each) do
-    @game = assign(:game, Game.create!(
+  before :each do
+    @game = assign :game, Game.create!(
       :location => "MyString",
       :first_team_id => 1,
       :second_team_id => 1,
       :winning_team => 1,
       :first_team_score => 1,
       :second_team_score => 1
-    ))
+    )
   end
 
   it "renders the edit game form" do

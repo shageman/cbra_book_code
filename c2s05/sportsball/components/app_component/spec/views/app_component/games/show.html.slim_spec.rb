@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "games/show", :type => :view do
-  before(:each) do
+  before :each do
     @game = assign(:game, Game.create!(
       :location => "Location",
       :first_team_id => 1,

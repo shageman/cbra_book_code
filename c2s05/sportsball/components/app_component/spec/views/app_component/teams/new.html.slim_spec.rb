@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "teams/new", :type => :view do
-  before(:each) do
+  before :each do
     assign(:team, Team.new(
       :name => "MyString"
     ))

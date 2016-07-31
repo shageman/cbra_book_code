@@ -1,5 +1,5 @@
 RSpec.describe "app_component/teams/index", :type => :view do
-  before(:each) do
+  before :each do
     assign(:teams, [
                      AppComponent::Team.create!(
                          :name => "Name"

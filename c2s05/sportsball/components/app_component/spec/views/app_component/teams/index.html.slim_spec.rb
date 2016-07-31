@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "teams/index", :type => :view do
-  before(:each) do
+  before :each do
     assign(:teams, [
       Team.create!(
         :name => "Name"
