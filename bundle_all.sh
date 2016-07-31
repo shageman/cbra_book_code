@@ -30,7 +30,6 @@ GEMFILES=(
   ./c3s05/sportsball/components/games_admin/Gemfile
   ./c3s05/sportsball/components/predictor/Gemfile
   ./c3s05/sportsball/Gemfile
-  ./c3s05/sportsball/predictor/Gemfile
   ./c3s05_finished/sportsball/components/app_component/Gemfile
   ./c3s05_finished/sportsball/components/games_admin/Gemfile
   ./c3s05_finished/sportsball/components/predictor/Gemfile
@@ -64,6 +63,28 @@ GEMFILES=(
   ./c3s07/sportsball/components/web_ui/Gemfile
   ./c3s07/sportsball/components/welcome_ui/Gemfile
   ./c3s07/sportsball/Gemfile
+  ./c5s01/sportsball/Gemfile
+  ./c5s01/sportsball/components/games/Gemfile
+  ./c5s01/sportsball/components/games_admin/Gemfile
+  ./c5s01/sportsball/components/predict_game/Gemfile
+  ./c5s01/sportsball/components/predictor/Gemfile
+  ./c5s01/sportsball/components/predictor_ui/Gemfile
+  ./c5s01/sportsball/components/publisher/Gemfile
+  ./c5s01/sportsball/components/teams/Gemfile
+  ./c5s01/sportsball/components/teams_admin/Gemfile
+  ./c5s01/sportsball/components/teams_store_db/Gemfile
+  ./c5s01/sportsball/components/teams_store_mem/Gemfile
+  ./c5s01/sportsball/components/web_ui/Gemfile
+  ./c5s01/sportsball/components/welcome_ui/Gemfile
+  ./c5s02/sportsball/Gemfile
+  ./c5s02/sportsball/components/games/Gemfile
+  ./c5s02/sportsball/components/games_admin/Gemfile
+  ./c5s02/sportsball/components/predictor/Gemfile
+  ./c5s02/sportsball/components/predictor_ui/Gemfile
+  ./c5s02/sportsball/components/teams/Gemfile
+  ./c5s02/sportsball/components/teams_admin/Gemfile
+  ./c5s02/sportsball/components/web_ui/Gemfile
+  ./c5s02/sportsball/components/welcome_ui/Gemfile
 )
 
 result=$(expr 0)
@@ -77,9 +98,10 @@ for test_script in ${GEMFILES[@]}; do
   echo "#############################################################"
   pushd `dirname $test_script` > /dev/null
   source "$HOME/.rvm/scripts/rvm"
-  rvm use 2.3.0
+  rvm use 2.3.1
   bundle
   result=$(expr $? + $result)
+  echo result
   popd > /dev/null
 done
 

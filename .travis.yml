@@ -85,4 +85,4 @@ before_install:
   - "sh -e /etc/init.d/xvfb start"
   - cd $(dirname $BUNDLE_GEMFILE)
 rvm:
-  - 2.2.2
+  - 2.3.1
