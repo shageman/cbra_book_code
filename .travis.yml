@@ -2,8 +2,8 @@ gemfile:
   - c2s06/sportsball/Gemfile
   - c2s06/sportsball/components/app_component/Gemfile
 
-  - c2s10/sportsball/web_container/Gemfile
-  - c2s10/sportsball/components/app_component/Gemfile
+  - c2s11/sportsball/web_container/Gemfile
+  - c2s11/sportsball/components/app_component/Gemfile
 
   - c3s03/sportsball/Gemfile
   - c3s03/sportsball/components/app_component/Gemfile
