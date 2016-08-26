@@ -8,6 +8,10 @@ module AppComponent
       end
     end
 
+    initializer :assets do |app|
+      app.config.assets.precompile += %w( app_component/logo.png )
+    end
+
     config.generators do |g|
       g.orm             :active_record
       g.template_engine :slim

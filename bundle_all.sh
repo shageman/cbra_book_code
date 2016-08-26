@@ -9,8 +9,8 @@
 # ./c4s01/r4ia_examples/ticketee/Gemfile
 # ./c4s01/r4ia_examples_result/ticketee/components/persistence/Gemfile
 # ./c4s01/r4ia_examples_result/ticketee/Gemfile
-# ./c2s11/sportsball/deploy/components/app_component/Gemfile
-# ./c2s11/sportsball/deploy/Gemfile
+# ./c2s12/sportsball/deploy/components/app_component/Gemfile
+# ./c2s12/sportsball/deploy/Gemfile
 
 GEMFILES=(
   ./c2s01/sportsball/components/app_component/Gemfile
@@ -21,8 +21,10 @@ GEMFILES=(
   ./c2s05/sportsball/Gemfile
   ./c2s06/sportsball/components/app_component/Gemfile
   ./c2s06/sportsball/Gemfile
-  ./c2s11/sportsball/components/app_component/Gemfile
-  ./c2s11/sportsball/web_container/Gemfile
+  ./c2s09/sportsball/components/app_component/Gemfile
+  ./c2s09/sportsball/Gemfile
+  ./c2s12/sportsball/components/app_component/Gemfile
+  ./c2s12/sportsball/web_container/Gemfile
   ./c3s03/sportsball/components/app_component/Gemfile
   ./c3s03/sportsball/components/predictor/Gemfile
   ./c3s03/sportsball/Gemfile

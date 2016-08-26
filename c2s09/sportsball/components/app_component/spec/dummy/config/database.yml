@@ -1,0 +1,11 @@
+development: &DEVELOPMENT
+  adapter: postgresql
+  database: sportsball_app_component_development
+  host: localhost
+  pool: 5
+  timeout: 5000
+
+test: &TEST
+  <<: *DEVELOPMENT
+  database: sportsball_app_component_test
+  min_messages: warning
