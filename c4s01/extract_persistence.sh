@@ -398,7 +398,7 @@ result=0
 for test_script in $(find . -name test.sh); do
   pushd `dirname $test_script` > /dev/null
   ./test.sh
-  result+=$?
+  ((result+=$?))
   popd > /dev/null
 done
 

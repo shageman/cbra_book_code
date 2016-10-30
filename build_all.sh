@@ -14,7 +14,7 @@ for test_script in $(find . -name build.sh); do
 #  rvm use $(cat .ruby-version)@$(cat .ruby-gemset) --create
   rvm use 2.3.1
   ./build.sh
-  result+=$?
+  ((result+=$?))
   popd > /dev/null
 done
 

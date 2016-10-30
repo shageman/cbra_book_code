@@ -10,7 +10,7 @@ ln -s teams_store_db components/teams_store
 for test_script in $(find . -name test.sh); do
   pushd `dirname $test_script` > /dev/null
   ./test.sh
-  result+=$?
+  ((result+=$?))
   popd > /dev/null
 done
 
@@ -22,7 +22,7 @@ ln -s teams_store_mem components/teams_store
 for test_script in $(find . -name test.sh); do
   pushd `dirname $test_script` > /dev/null
   ./test.sh
-  result+=$?
+  ((result+=$?))
   popd > /dev/null
 done
 
