@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/shageman/cbra_book_code.svg?branch=master)](https://travis-ci.org/shageman/cbra_book_code)
 # Component-based Rails Applications (CBRA) - Source Code to the Book
 
-This repository holds all source code used in my book on [Component-based Rails Applications](https://leanpub.com/cbra).
+This repository holds all source code used in my book on [Component-based Rails Applications](http://cbra.info).
 
 ## How to use this repository
 
