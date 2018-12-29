@@ -15,7 +15,7 @@ Please let me know if you find any errors in the code!
 
 ## License
 
-    Copyright (c) 2014-2015 Stephan Hagemann
+    Copyright (c) 2014-2019 Stephan Hagemann
     twitter.com/shageman
     %w(stephan.hagemann gmail.com) * "@"
 
